@@ -1,25 +1,23 @@
 package es.upm.miw.pd.composite.expression.solution;
 
-import java.util.ArrayList;
-import java.util.List;
+public abstract class Operacion extends Expresion {
+    protected Expresion expresion1;
+    protected Expresion expresion2;
 
-public abstract class Operacion extends Expression {
-    protected List<Expression> expresiones = new ArrayList<Expression>();
     private char operador;
 
-    public Operacion(final Expression exp1, final Expression exp2,
+    public Operacion(final Expresion expresion1, final Expresion expresion2,
             final char operador) {
-        expresiones.add(exp1);
-        expresiones.add(exp2);
+        this.expresion1=expresion1;
+        this.expresion2=expresion2;
         this.operador = operador;
     }
 
     @Override
     protected abstract int operar();
-
     @Override
-    protected abstract String toSring();
-
-
+    protected final String toSring() {
+        return "(" + expresion1.toSring() + operador + expresion2.toSring() + ")";
+    }
 
 }

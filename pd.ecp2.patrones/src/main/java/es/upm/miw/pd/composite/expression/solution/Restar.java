@@ -4,19 +4,14 @@ public class Restar extends Operacion {
 
     private static final char OPERATOR = '-';
 
-    public Restar(final Expression exp1, final Expression exp2) {
+    public Restar(final Expresion exp1, final Expresion exp2) {
         super(exp1, exp2, OPERATOR);
     }
     @Override
     protected final int operar() {
-        // TODO Auto-generated method stub
-        return 0;
+        return  expresion1.operar() - expresion2.operar();
     }
 
-    @Override
-    protected final String toSring() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+ 
 
 }

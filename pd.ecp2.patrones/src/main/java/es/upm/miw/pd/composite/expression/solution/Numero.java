@@ -1,18 +1,20 @@
 package es.upm.miw.pd.composite.expression.solution;
 
-public class Numero extends Expression{
+public class Numero extends Expresion {
     private int numero;
-    
-    @Override
-    protected int operar() {
-        // TODO Auto-generated method stub
-        return 0;
+
+    public Numero(final int numero) {
+        this.numero = numero;
     }
 
     @Override
-    protected String toSring() {
-        // TODO Auto-generated method stub
-        return null;
+    protected final int operar() {
+        return numero;
+    }
+
+    @Override
+    protected final String toSring() {
+        return String.valueOf(numero);
     }
 
 }

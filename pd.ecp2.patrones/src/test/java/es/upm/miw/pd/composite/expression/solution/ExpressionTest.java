@@ -58,6 +58,6 @@ public class ExpressionTest {
 
     @Test
     public void testToString() {
-        assertEquals("((3-((4/2)*3))+4)", this.exp6.toString());
+        assertEquals("((3-((4/2)*3))+4)", this.exp6.toSring());
     }
 }

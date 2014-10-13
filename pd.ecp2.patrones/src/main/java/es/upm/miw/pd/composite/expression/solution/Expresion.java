@@ -1,6 +1,6 @@
 package es.upm.miw.pd.composite.expression.solution;
 
-public abstract class Expression {
+public abstract class Expresion {
     protected abstract int operar();
     protected abstract String toSring();
 }
