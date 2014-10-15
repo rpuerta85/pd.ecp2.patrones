@@ -10,7 +10,9 @@ public class Conexion {
     public Conexion() {
         this.estado = new Cerrado();
     }
-
+    public Conexion(Link link) {
+        this.estado = new Cerrado();
+    }
     public Estado getEstado() {
         return this.estado;
     }

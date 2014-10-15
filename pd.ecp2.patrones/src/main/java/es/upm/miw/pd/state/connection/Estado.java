@@ -11,5 +11,8 @@ public abstract class Estado {
     public abstract void enviar(Conexion conexion,String msg);
     public abstract void recibir(Conexion conexion,int respuesta);
 
+    public String toString(){
+       return "Estado "+this.getClass().getSimpleName();
+    }
 
 }
