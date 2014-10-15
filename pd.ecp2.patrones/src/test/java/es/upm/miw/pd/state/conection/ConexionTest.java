@@ -105,7 +105,8 @@ public class ConexionTest {
     public void testPreparadoIniciar() {
         this.conexion.abrir();
         this.conexion.iniciar();
-        assertEquals(new Preparado().toString(), this.conexion.getEstado().toString());
+        assertEquals(new Preparado().toString(),
+                this.conexion.getEstado().toString());
     }
 
     @Test
