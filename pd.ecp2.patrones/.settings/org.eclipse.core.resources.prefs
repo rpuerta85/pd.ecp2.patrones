@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/main/java/es/upm/miw/pd/state/connection/Cerrado.java=UTF-8
+encoding//src/main/java/es/upm/miw/pd/state/connection/Conexion.java=UTF-8
+encoding//src/main/java/es/upm/miw/pd/state/connection/Esperando.java=UTF-8
+encoding//src/main/java/es/upm/miw/pd/state/connection/Parado.java=UTF-8
+encoding//src/main/java/es/upm/miw/pd/state/connection/Preparado.java=UTF-8

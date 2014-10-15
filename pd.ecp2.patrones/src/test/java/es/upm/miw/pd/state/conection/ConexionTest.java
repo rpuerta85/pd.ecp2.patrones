@@ -6,7 +6,6 @@ import org.junit.Test;
 import es.upm.miw.pd.state.connection.Cerrado;
 import es.upm.miw.pd.state.connection.Conexion;
 import es.upm.miw.pd.state.connection.Esperando;
-import es.upm.miw.pd.state.connection.Estado;
 import es.upm.miw.pd.state.connection.Link;
 import es.upm.miw.pd.state.connection.Parado;
 import es.upm.miw.pd.state.connection.Preparado;
@@ -20,9 +19,8 @@ public class ConexionTest {
 
     @Before
     public void ini() {
+        this.conexion = new Conexion();
         //this.link = new LinkMock();
-        //this.conexion = new Conexion(link);
-      this.conexion = new Conexion();
     }
 
     @Test
@@ -114,9 +112,10 @@ public class ConexionTest {
     public void testPreparadoEnviar() {
         this.conexion.abrir();
         this.conexion.enviar("...");
-        assertEquals(new Esperando().toString(), this.conexion.getEstado().toString());
-       // assertEquals("...", link.getMsg());
-        assertEquals("...", conexion.getMsg());
+        assertEquals(new Esperando().toString(),
+                this.conexion.getEstado().toString());
+        //assertEquals("...", link.getMsg());
+        assertEquals("...", this.conexion.getMsg());
     }
 
     @Test

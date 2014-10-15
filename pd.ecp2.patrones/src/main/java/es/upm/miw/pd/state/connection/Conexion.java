@@ -1,6 +1,6 @@
 package es.upm.miw.pd.state.connection;
 
-public class Conexion {
+public class Conexion implements Link {
     private Estado estado;
 
     private Link link;
@@ -10,9 +10,7 @@ public class Conexion {
     public Conexion() {
         this.estado = new Cerrado();
     }
-    public Conexion(Link link) {
-        this.estado = new Cerrado();
-    }
+    
     public Estado getEstado() {
         return this.estado;
     }

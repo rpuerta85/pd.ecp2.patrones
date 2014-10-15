@@ -3,6 +3,7 @@ package es.upm.miw.pd.state.connection;
 public interface Link {
     static final int ACK = 0;
 
-    void enviar(String msg);
-    void recibir (int respuesta);
+    public void enviar(String msg);
+
+    public void recibir(int respuesta);
 }
