@@ -4,7 +4,8 @@ import es.upm.miw.pd.state.connection.Cerrado;
 import es.upm.miw.pd.state.connection.Conexion;
 import es.upm.miw.pd.state.connection.Link;
 
-public final class LinkMock extends Conexion implements Link  {
+ final class LinkMock extends Conexion implements Link {
+
     private String msg;
 
     private int respuesta;
@@ -12,6 +13,8 @@ public final class LinkMock extends Conexion implements Link  {
     public LinkMock() {
         this.estado = new Cerrado();
     }
+
+
     public String getMsg() {
         return msg;
     }
@@ -25,6 +28,7 @@ public final class LinkMock extends Conexion implements Link  {
         this.msg = msg;
         this.estado.enviar(this, msg);
     }
+
 
     @Override
     public void recibir(int respuesta) {

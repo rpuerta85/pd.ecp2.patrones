@@ -1,6 +1,7 @@
 package es.upm.miw.pd.state.connection;
 
 public class Conexion {
+
     protected Estado estado;
 
     private Link link;
