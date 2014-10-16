@@ -13,8 +13,8 @@ public class NaturalNumberManager {
         return creator;
     }
 
-    public NaturalNumber createNaturalNumber() {
-        return creator.createFigure();
+    public NaturalNumber createNaturalNumber(int num) {
+        return creator.createFigure(num);
     }
 
 }

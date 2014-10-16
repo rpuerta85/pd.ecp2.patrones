@@ -18,7 +18,7 @@ public class NaturalNumberManagerTest {
     @Test
     public void testSetNaturalNumberCreator(NaturalNumberCreator naturalNumberCreator) {
         NaturalNumberEsCreator naturalNumberEsCreator = new NaturalNumberEsCreator();
-        naturalNumberEsCreator.setNaturalNumberCreator(new NaturalNumberEsCreator());
+        naturalNumberManager.setNaturalNumberCreator(new NaturalNumberEsCreator());
         assertSame(naturalNumberManager.getCreator(), naturalNumberEsCreator);
     }
     
@@ -26,7 +26,8 @@ public class NaturalNumberManagerTest {
     public void testCreateNaturalNumber() {
         NaturalNumberEsCreator naturalNumberEsCreator = new NaturalNumberEsCreator();
         naturalNumberManager.setNaturalNumberCreator(naturalNumberEsCreator);
-        assertSame(naturalNumberManager.createNaturalNumber(), naturalNumberEsCreator);
+        NaturalNumber naturalNumber=naturalNumberManager.createNaturalNumber(2);
+        assertEquals(naturalNumber.getValue(), 2);
         ;
     }
 
