@@ -4,8 +4,8 @@ public class NaturalNumberEsCreator extends NaturalNumberCreator {
 
     @Override
     public NaturalNumber createFigure(int num) {
-        return new NaturalNumberEs(num) {
-        };
+        return new NaturalNumberEs(num);
+        
     }
 
 }

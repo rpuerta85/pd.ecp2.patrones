@@ -4,7 +4,7 @@ public class NaturalNumberManager {
 
     private NaturalNumberCreator creator;
     
-    public void setNaturalNumberCreator(NaturalNumberEsCreator naturalNumberEsCreator) {
+    public void setNaturalNumberCreator(NaturalNumberCreator naturalNumberEsCreator) {
         this.creator=naturalNumberEsCreator;
     }
 
