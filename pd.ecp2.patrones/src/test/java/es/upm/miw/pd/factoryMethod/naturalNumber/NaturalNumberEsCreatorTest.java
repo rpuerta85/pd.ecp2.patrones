@@ -13,7 +13,6 @@ public class NaturalNumberEsCreatorTest {
     public void ini() {
         naturalNumberEsCreator = new NaturalNumberEsCreator();
     }
-
     @Test
     public void testCreateFigure () {
         assertNotNull(naturalNumberEsCreator.createFigure(1));

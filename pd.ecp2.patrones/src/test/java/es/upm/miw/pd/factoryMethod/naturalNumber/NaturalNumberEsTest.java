@@ -25,6 +25,8 @@ public class NaturalNumberEsTest {
         assertNotNull(new Integer(naturalNumberEs.getValue()));
         assertEquals(naturalNumberEs.getValue(),4);
     }
-    
-    
+    @Test
+    public void testTextValue() {
+        assertEquals(naturalNumberEs.getTextValue(),NaturalNumberEs.textValue[1]);
+    }
 }
