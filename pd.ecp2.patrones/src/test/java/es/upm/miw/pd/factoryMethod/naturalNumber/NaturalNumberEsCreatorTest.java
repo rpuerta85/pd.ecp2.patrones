@@ -17,5 +17,9 @@ public class NaturalNumberEsCreatorTest {
     @Test
     public void testCreateFigure () {
         assertNotNull(naturalNumberEsCreator.createFigure());
+        assertEquals(naturalNumberEsCreator.createFigure().getClass().getSimpleName(),
+                new NaturalNumberEs(1).getClass().getSimpleName());
     }
+
+
 }

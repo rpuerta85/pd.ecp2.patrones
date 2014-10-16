@@ -6,7 +6,8 @@ public class NaturalNumberEsCreator extends NaturalNumberCreator {
     @Override
     public NaturalNumber createFigure() {
         // TODO Auto-generated method stub
-        return null;
+        return new NaturalNumberEs() {
+        };
     }
 
 }

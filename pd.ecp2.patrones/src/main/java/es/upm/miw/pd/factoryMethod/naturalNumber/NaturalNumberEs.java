@@ -8,9 +8,6 @@ public class NaturalNumberEs extends NaturalNumber {
         this.setValue(value);
     }
 
-    public void add(int value) {
-        this.setValue(this.value + value);
-    }
 
     public String getTextValue() {
         if (this.value < textValue.length) {
@@ -20,4 +17,5 @@ public class NaturalNumberEs extends NaturalNumber {
         }
     }
 
+    
 }
