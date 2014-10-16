@@ -20,7 +20,8 @@ public class ConexionTest {
     @Before
     public void ini() {
         this.conexion = new Conexion();
-        //this.link = new LinkMock();
+        this.link = new LinkMock();
+        this.conexion=this.link;
     }
 
     @Test
