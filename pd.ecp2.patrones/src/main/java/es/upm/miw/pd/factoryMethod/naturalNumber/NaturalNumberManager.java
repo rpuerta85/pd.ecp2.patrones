@@ -6,7 +6,6 @@ public class NaturalNumberManager {
     
     public void setNaturalNumberCreator(NaturalNumberEsCreator naturalNumberEsCreator) {
         this.creator=naturalNumberEsCreator;
-        
     }
 
     public NaturalNumberCreator getCreator() {

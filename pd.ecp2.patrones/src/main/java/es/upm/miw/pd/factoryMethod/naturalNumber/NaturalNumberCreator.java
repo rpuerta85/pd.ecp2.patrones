@@ -1,10 +1,6 @@
 package es.upm.miw.pd.factoryMethod.naturalNumber;
 
 public abstract class NaturalNumberCreator {
-    
-    public void setNaturalNumberCreator(NaturalNumberEsCreator naturalNumberEsCreator) {
 
-    }
-
-    public abstract NaturalNumber createFigure();
+    public abstract NaturalNumber createFigure(int num);
 }

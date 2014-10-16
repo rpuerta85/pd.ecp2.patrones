@@ -13,4 +13,8 @@ public abstract class NaturalNumber {
         assert value >= 0;
         this.value = value;
     }
+    
+    public void add(int value) {
+        this.setValue(this.value + value);
+    }
 }
