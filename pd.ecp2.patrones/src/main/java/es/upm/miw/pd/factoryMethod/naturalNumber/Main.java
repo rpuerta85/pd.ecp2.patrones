@@ -11,10 +11,12 @@ public class Main {
         naturalNumberManager.setNaturalNumberCreator(new NaturalNumberFrCreator());
         naturalNumber=naturalNumberManager.createNaturalNumber(3);
         System.out.println(naturalNumber.getTextValue());
+
         
         naturalNumberManager.setNaturalNumberCreator(new NaturalNumberEnCreator());
         naturalNumber=naturalNumberManager.createNaturalNumber(3);
         System.out.println(naturalNumber.getTextValue());
+
         
         
         
