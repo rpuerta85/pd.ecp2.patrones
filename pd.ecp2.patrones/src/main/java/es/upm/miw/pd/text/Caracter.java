@@ -9,8 +9,14 @@ public class Caracter extends Componente {
     }
     
     @Override
-    public String dibujar(boolean b) {
-       return null;
+    public String dibujar(boolean mayuscula) {
+       String result = String.valueOf(caracter); 
+        if(mayuscula) {
+            result = result.toUpperCase();
+       }else {
+           result = result.toLowerCase();
+       }
+        return result;
 
     }
 
