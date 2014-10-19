@@ -17,8 +17,8 @@ public class Caracter extends Componente {
     @Override
     public void add(Componente h) {
      
-
     }
+    
 
     public char getCaracter() {
         return caracter;
