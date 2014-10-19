@@ -20,9 +20,9 @@ public class FactoriaCaracterTest {
 
     @Test
     public void testFactoryReferences() {
-        assertEquals("a", FactoriaCaracter.getFactoria().get('a'));
-        assertEquals("A", FactoriaCaracter.getFactoria().get('A'));
+        assertEquals("a", FactoriaCaracter.getFactoria().get('a').dibujar(false));
+        assertEquals("A", FactoriaCaracter.getFactoria().get('A').dibujar(true));
         FactoriaCaracter.getFactoria().removeCaracter('A');
-        assertEquals("A", FactoriaCaracter.getFactoria().get('A'));
+        assertEquals("A", FactoriaCaracter.getFactoria().get('A').dibujar(true));
     }
 }
