@@ -13,8 +13,6 @@ public class Caracter extends Componente {
        String result = String.valueOf(caracter); 
         if(mayuscula) {
             result = result.toUpperCase();
-       }else {
-           result = result.toLowerCase();
        }
         return result;
 

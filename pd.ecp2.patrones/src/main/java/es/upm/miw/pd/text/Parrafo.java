@@ -14,4 +14,12 @@ public class Parrafo extends ConjuntoCaracteres {
     public  void remove(Componente h) {
         this.conjuntoCaracteres.remove(h);
     }
+    @Override
+    protected String añadirCabeceraFinal() {
+        String resul = null;
+        if(!this.conjuntoCaracteres.isEmpty()) {
+            resul = "\n";
+        }
+        return resul;
+    }
 }
