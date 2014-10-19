@@ -24,7 +24,7 @@ public class Caracter extends Componente {
         return caracter;
     }
 
-    private boolean isCompuesto(){
+    protected boolean isCompuesto(){
         return false;
     }
     
