@@ -20,5 +20,13 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency> 
+	        <groupId>io</groupId> 
+	        <artifactId>io</artifactId> 
+	        <version>1.2.123</version> 
+	        <type>jar</type> 
+	        <scope>system</scope> 
+	     	<systemPath>${project.basedir}/lib/io.5.3.jar</systemPath>
+    </dependency> 
 	</dependencies>
 </project>

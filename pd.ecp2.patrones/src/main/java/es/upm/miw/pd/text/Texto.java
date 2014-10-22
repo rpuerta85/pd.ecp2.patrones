@@ -18,7 +18,7 @@ public class Texto extends ConjuntoCaracteres {
      }
    
     @Override
-    protected String añadirCabeceraFinal() {
+    protected String aÃ±adirCabeceraFinal() {
         String result = null;
         if(!this.conjuntoCaracteres.isEmpty()) {
             result = "---o---"+"\n";

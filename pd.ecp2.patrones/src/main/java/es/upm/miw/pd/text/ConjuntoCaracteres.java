@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class ConjuntoCaracteres extends Componente {
     protected List<Componente> conjuntoCaracteres = new  ArrayList<Componente>();
-    protected static final String MSG_EXCEPCION = "Operación no soportada";
+    protected static final String MSG_EXCEPCION = "OperaciÃ³n no soportada";
 
     @Override
     public String dibujar(boolean b) {
@@ -13,11 +13,11 @@ public abstract class ConjuntoCaracteres extends Componente {
         for (Componente componente : this.conjuntoCaracteres) {
             result += componente.dibujar(b);
         }
-        result += añadirCabeceraFinal();
+        result += aÃ±adirCabeceraFinal();
         return result;
     }
 
-    protected abstract String añadirCabeceraFinal();
+    protected abstract String aÃ±adirCabeceraFinal();
     
     @Override
     public abstract void add(Componente h);
